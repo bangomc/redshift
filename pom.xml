@@ -36,13 +36,6 @@
 			</exclusions>
 		</dependency>
 		
-		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk -->
-		<!-- <dependency>
-		    <groupId>com.amazonaws</groupId>
-		    <artifactId>aws-java-sdk</artifactId>
-		    <version>1.11.706</version>
-		</dependency> -->
-		<!-- https://mvnrepository.com/artifact/com.amazon.redshift/redshift-jdbc42 -->
 		<dependency>
 		    <groupId>com.amazon.redshift</groupId>
 		    <artifactId>redshift-jdbc42</artifactId>
@@ -60,5 +53,12 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<repositories>
+	    <repository>
+	      <id>redshift</id>
+	      <url>http://redshift-maven-repository.s3-website-us-east-1.amazonaws.com/release</url>
+	    </repository>
+	</repositories>
 
 </project>
